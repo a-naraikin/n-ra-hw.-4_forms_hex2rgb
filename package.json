@@ -40,5 +40,6 @@
   },
   "devDependencies": {
     "eslint": "^8.15.0"
-  }
+  },
+  "homepage": "https://a-naraikin.github.io/n-ra-hw.-4_forms_hex2rgb"
 }
