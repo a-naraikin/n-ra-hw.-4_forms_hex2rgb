@@ -15,6 +15,12 @@ export default function Hex2rgb() {
   
     if (value.length === 7 && value[0] === '#') {
       const toRgb = hexInRgb(evt.target.value);
+
+      if (!toRgb) {
+        app.style.backgroundColor = '#E94B35';
+        setRgb('Ошибка!');
+      }
+
       const rgbValue = `rgb(${toRgb.r}, ${toRgb.g}, ${toRgb.b})`;
       app.style.backgroundColor = rgbValue
       setRgb(rgbValue);
